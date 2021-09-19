@@ -15,7 +15,7 @@ You should have `TestRecorder.jar` in the root directory of this repo after this
 To quickly start recording:
 
 ```bash
-$ CTRL_PORT=${CTRL_PORT} SKIP_MINICAP=1 java -jar TestRecorder.jar ${OUT_DIR}
+$ CTRL_PORT={CTRL_PORT} SKIP_MINICAP=1 java -jar TestRecorder.jar {OUT_DIR}
 ```
 
 Replace `CTRL_PORT` with the ADB-forwarded port number to reach TOLLER (see [here](https://github.com/TOLLER-Android/main/blob/main/USAGES.md) for how). Also replace `OUT_DIR` with the path to the directory where you want to store UI hierarchies. As you operate on the target app, you will see many JSON files in `OUT_DIR`, each consists of a UI hierarchy and the action observed on it.
@@ -23,7 +23,7 @@ Replace `CTRL_PORT` with the ADB-forwarded port number to reach TOLLER (see [her
 Note that the aforementioned command does not record screenshots. If you need screenshots, use the following command:
 
 ```bash
-$ CTRL_PORT=${CTRL_PORT} MINICAP_PORT=${MINICAP_PORT} java -jar TestRecorder.jar ${OUT_DIR} ${SCREEN_OUT_DIR}
+$ CTRL_PORT={CTRL_PORT} MINICAP_PORT={MINICAP_PORT} java -jar TestRecorder.jar {OUT_DIR} {SCREEN_OUT_DIR}
 ```
 
 Replace `MINICAP_PORT` with the ADB-forwarded port number to reach Minicap (see [here](https://github.com/VET-UI-Testing/minicap) for how). Also replace `SCREEN_OUT_DIR` with the path to the directory where you want to store screenshots.
