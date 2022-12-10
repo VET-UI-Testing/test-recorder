@@ -2,9 +2,9 @@
 
 This repository contains the code of our on-computer test recorder that works with [TOLLER](https://github.com/TOLLER-Android/main). The program records UI traces (that consist of UI hierarchies interleaving with actions) to reflect the testing process. It does not matter who operates the target app--both humans and automated tools can record with this program.
 
-## Building
+## Build
 
-You can download our prebuilt binary from [here](https://drive.google.com/drive/folders/1bYFwOuy4s3Pn3xRw7X5qIlphCBe8mDYe).
+You can download our prebuilt binary from [here](https://github.com/VET-UI-Testing/test-recorder/releases/download/v1.0/TestRecorder.jar).
 
 To build by yourself, import this repo with some IDE (e.g., JetBrains IntelliJ Idea) and follow its instructions to generate a JAR archive. All dependent libraries are available in `lib/`.
 
