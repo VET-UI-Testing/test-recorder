@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "$(dirname "$0")" || echo "Unable to find TestRecorder main program" && exit
+cd "$(dirname "$0")"
 echo "Starting TestRecorder"
 java -jar TestRecorder.jar \
   "${OUT_DIR}" "${SCREEN_OUT_DIR}" \
